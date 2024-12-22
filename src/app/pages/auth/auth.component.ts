@@ -106,8 +106,8 @@ export default class AuthComponent {
   private router = inject(Router);
 
   public myForm: FormGroup = this.fb.group({
-    email: ['luis@gmail.com', [Validators.required]],
-    password: ['Abc123', [Validators.required]],
+    email: ['', [Validators.required]],
+    password: ['', [Validators.required]],
     branch: ['', [Validators.required]]
   })
 
