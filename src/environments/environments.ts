@@ -1,3 +1,3 @@
 export const environments = {
-  testBaseUrl: 'http://localhost:3000/api',
+  testBaseUrl: 'https://la-terza-api-production.up.railway.app/api',
 }
