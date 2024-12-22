@@ -16,8 +16,8 @@ export class AuthService {
   private http = inject(HttpClient);
 
   private _authStatus = signal<AuthStatus>(AuthStatus.checking);
-  private readonly SUPER_ADMIN_EMAIL = 'luis@gmail.com';
-  private readonly SUPER_ADMIN_ID = 'ad0cb1d6-5ba4-4d1d-bddc-454427b67de2';
+  private readonly SUPER_ADMIN_ID = environments.superAdminId;
+  private readonly SUPER_ADMIN_EMAIL = environments.superAdminEmail;
 
   public currentUser = computed(() => this._currentUser());
   public authStatus = computed(() => this._authStatus());
